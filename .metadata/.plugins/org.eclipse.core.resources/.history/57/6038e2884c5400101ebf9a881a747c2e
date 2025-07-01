@@ -1,0 +1,74 @@
+package com.java.cal;
+
+import java.util.Scanner;
+
+public class Calculators {
+	
+	public static void main(String[] args) {
+		
+//		calculator
+//		add , sub, mul, div
+		
+		System.out.println("===WELCOME TO CALCULATOR===");
+		
+		Scanner sc=new Scanner(System.in);
+		
+		
+		System.out.println("Enter first No:");
+		int a=sc.nextInt();
+		
+		
+		System.out.println("Enter second No");
+		int b=sc.nextInt();
+		
+		
+		System.out.println("==res==");
+		
+		System.out.println(add(a,b));
+		
+		System.out.println(sub(a,b));
+		
+		System.out.println(mul(a,b));
+		
+		
+		
+		
+		
+		
+		
+	}
+//	add -> a, b ,,=>a+b sum
+	public static int add(int a , int b) {
+//		int sum=0;
+//		sum=a+b;
+//		return sum;
+		return a+b;
+	}
+	
+	public static int sub(int a, int b) {
+		int res=0;
+		res=a-b;
+		return res;
+	}
+	public static int mul(int a, int b) {
+//		return a*b;
+		int res=0;
+		res=a*b;
+		return res;
+	}
+	public static int  division(int a, int b) {
+		int res=0;
+		
+		
+		if(b<0) {
+			System.out.println(" demonitor cant be negative");
+			return 0;// return ,break , exit()
+		}
+		res=a/b; // 10/2=5 ,46/23=2 , 20/0
+		
+		return res;
+	}
+	
+	
+
+}
